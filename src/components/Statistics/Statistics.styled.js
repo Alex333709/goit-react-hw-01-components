@@ -92,7 +92,7 @@ export const Item = styled('li')(props => ({
   justifyContent: 'center',
   alignItems: 'center',
   padding: '15px',
-  margin: '10px',
+  margin: '5px',
   width: '15%',
   backgroundColor: props.$backgroundColor || '#fff',
   color: 'white',

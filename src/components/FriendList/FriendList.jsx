@@ -1,6 +1,6 @@
 import React from 'react';
-import FriendListItem from './FriendListItem.jsx';
-import { List } from './Friend.styled.js';
+import FriendListItem from '../FriendListItem/FriendListItem';
+import { List } from './FriendList.styled.js';
 
 function FriendList({ friends }) {
   return (

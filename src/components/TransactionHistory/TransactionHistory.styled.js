@@ -40,7 +40,7 @@ import styled from 'styled-components';
 //   font-size: 0.9em;
 // `;
 export const Table = styled('table')(() => ({
-  width: '60%',
+  width: '50%',
   borderCollapse: 'collapse',
   marginTop: '20px',
   marginBottom: '20px',

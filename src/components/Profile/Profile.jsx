@@ -3,42 +3,42 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImage from '../../img/defaultImage.webp';
 import {
-  ProfileContainer,
+  ProfileSection,
   Description,
-  UserAvatar,
+  Avatar,
   UserName,
-  UserTag,
-  UserLocation,
+  Tag,
+  Location,
   Stats,
-  StatItem,
-  StatLabel,
-  StatQuantity,
+  StatsItem,
+  Label,
+  Quantity,
 } from './Profile.styled.js';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <ProfileContainer>
+    <ProfileSection>
       <Description>
-        <UserAvatar src={avatar || defaultImage} alt="User avatar" />
+        <Avatar src={avatar || defaultImage} alt="User avatar" />
         <UserName>{username}</UserName>
-        <UserTag>@{tag}</UserTag>
-        <UserLocation>{location}</UserLocation>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
       </Description>
       <Stats>
-        <StatItem>
-          <StatLabel>Followers</StatLabel>
-          <StatQuantity>{stats.followers}</StatQuantity>
-        </StatItem>
-        <StatItem>
-          <StatLabel>Views</StatLabel>
-          <StatQuantity>{stats.views}</StatQuantity>
-        </StatItem>
-        <StatItem>
-          <StatLabel>Likes</StatLabel>
-          <StatQuantity>{stats.likes}</StatQuantity>
-        </StatItem>
+        <StatsItem>
+          <Label>Followers</Label>
+          <Quantity>{stats.followers}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Views</Label>
+          <Quantity>{stats.views}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Likes</Label>
+          <Quantity>{stats.likes}</Quantity>
+        </StatsItem>
       </Stats>
-    </ProfileContainer>
+    </ProfileSection>
   );
 };
 

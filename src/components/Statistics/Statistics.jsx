@@ -8,7 +8,7 @@ import {
   Label,
   Percentage,
 } from './Statistics.styled.js';
-import { getRandomColor } from 'Helpers/getRandomColor';
+import getRandomColor from 'Helpers/getRandomColor';
 
 const Statistics = ({ title, stats }) => (
   <Section>
